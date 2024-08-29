@@ -1,0 +1,19 @@
+CREATE TABLE CLIENTES  (cliente text, cpf bigint,codigocliente int);
+SELECT * FROM CLIENTES
+INSERT INTO CLIENTES VALUES ('Josemar Dos Santos', '27930141845', '1');
+INSERT INTO CLIENTES VALUES ('EMEF PROF GILSON KOLL MONTEIRO', '57735037000158', '2');
+
+
+
+
+CREATE TABLE ENDEREÇO (endereço text , codigocliente int )
+SELECT * FROM ENDEREÇO
+INSERT INTO ENDEREÇO VALUES ('Dr. Archimedes Bava', '1')
+INSERT INTO ENDEREÇO VALUES ('Rivaldo De Lima Ferreira', '2')	
+
+
+
+CREATE TABLE PROJETO (projeto text , endereço text , codigocliente int)
+SELECT * FROM PROJETO
+INSERT INTO PROJETO VALUES ('Fachada,corredor,garagem' , 'Dr. Archimedes Bava', '1')
+INSERT INTO PROJETO VALUES ('Reforma da dispensa', 'Rivaldo De Lima Ferreira', '2')
